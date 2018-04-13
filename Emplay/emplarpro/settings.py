@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'emplarrapp'
 ]
 
 MIDDLEWARE = [
@@ -79,12 +80,14 @@ DATABASES = {
         'NAME': 'emplaydb',
         'USER': 'root',
         'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '',
 
     }
 }
 
-import dj_database_url
-DATABASES = { 'default': dj_database_url.config( default=dj_database_url.config('DATABASE_URL') ) }
+# import dj_database_url
+# DATABASES = { 'default': dj_database_url.config( default=dj_database_url.config('DATABASE_URL') ) }
 
 
 

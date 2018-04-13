@@ -18,8 +18,8 @@ class AccountChild(models.Model):
         return str(self.account_name)
 
 class Account(models.Model):
-    account_id = models.ForeignKey(AccountRisk)
-    account_child_id = models.ForeignKey(AccountChild)
+    account_id = models.ForeignKey(AccountRisk,on_delete=models.CASCADE)
+    account_child_id = models.ForeignKey(AccountChild, on_delete=models.CASCADE)
     potential = models.CharField(max_length=10)
     pipeline = models.CharField(max_length=10)
     stage = models.CharField(max_length=20)
