@@ -74,20 +74,20 @@ WSGI_APPLICATION = 'emplarpro.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'emplaydb',
-#         'USER': 'root',
-#         'PASSWORD': 'root',
-#         'HOST': 'localhost',
-#         'PORT': '',
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'emplaydb',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '',
 
-#     }
-# }
+    }
+}
 
-import dj_database_url
-DATABASES = { 'default': dj_database_url.config( default=dj_database_url.config('DATABASE_URL') ) }
+# import dj_database_url
+# DATABASES = { 'default': dj_database_url.config( default=dj_database_url.config('DATABASE_URL') ) }
 
 
 
