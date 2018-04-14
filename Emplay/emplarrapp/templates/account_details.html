@@ -1,0 +1,216 @@
+{% extends 'index.html' %} {% block content %}
+
+<div class="row zero-margin-bottom ">
+    <section class="card-pad emp-details-form">
+    <div class="col s12 m12 l12 ">
+        <div class="row">
+          <br>
+          <div class="col s12 m3 l3  ">
+            <section class="card-pad topinvoice z-depth-2 hoverable">
+              <div class=" col s12">
+                <h1 class="center-align"><b>{{child_account_count.account_child_id__count}}
+                </b></h1>
+                <p class="center-align">
+                    CHILD ACCOUNTS
+                </p>
+              </div>
+            </section>
+            <br>
+          </div>
+          <div class="col s12 m3 l3 "> 
+            <section class="card-pad topinvoice z-depth-2 hoverable">
+              <div class=" col s12">
+                  <h1 class="center-align"><b>{{count_stage_won}}
+                    </b></h1>
+                <p class="center-align">ACCOUNTS WON</p>
+              </div>
+            </section>
+            <br>
+          </div>
+          <div class="col s12 m3 l3 "> 
+            <section class="card-pad topinvoice z-depth-2 hoverable">
+              <div class=" col s12">
+                  <h1 class="center-align"><b>{{count_hp_potentail}}
+                    </b></h1>
+                <p class="center-align">HIGH POTENTAIL ACCOUNTS</p>
+              </div>
+            </section>
+            <br>
+          </div>
+          <div class="col s12 m3 l3 "> 
+            <section class="card-pad topinvoice z-depth-2 hoverable">
+              <div class=" col s12">
+                  <h1 class="center-align"><b>{{count_hp_pipeline}}
+                    </b></h1>
+                <p class="center-align">HIGH PIPELINE ACCOUNTS</p>
+              </div>
+            </section>
+            <br>
+          </div>
+      
+        </div>
+      </div>
+    </section>
+    <section class="card-pad emp-details-form">
+        <div class="row z-depth-1">
+                <div class="col s12 m12 l12 ">
+                        <section class="card-pad topinvoice z-depth-2 hoverable background">
+                                <div class=" col s12">
+                                    <div class="row background">
+                                        <ul>
+                                            <li><b>Account Name:</b> {{account_risk.account_name}}</li>
+                                            <br>
+                                            <li><b>End Customer:</b> {{account_risk.customer_name}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </section>             
+                    </div>
+        <br>
+        <div class="row">
+            <div class="col s12 m12 l2" style="margin-top:80px;">
+                <h3>Account Risk(s)</h3>
+            </div>
+            <div class="col s12 m12 l10">
+                    <ul class="collection with-header">
+                        {% for item in risk_items %}
+                            <li class="collection-header"> &#9673; {{item}}</li>
+                        {% endfor %}
+                          </ul>
+                        
+                                
+            
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+
+
+<style>
+  #expiremodal { transform: translateX(25%) translateY(15%) !important }
+  .card-pad,
+  .card-content {
+    background-color: white;
+  }
+
+  .card-title {
+    background-color: ghostwhite;
+    height: 45px;
+    padding: 15px 0px 0px 10px;
+  }
+
+  .topinvoice {
+    height: 100px;
+    /*width: 150px;*/
+  }
+
+  .card-content {
+    width: auto;
+    height: 300px;
+    overflow: auto;
+  }
+
+  #id_togglebtn {
+    margin-left: 25rem;
+    margin-top: -9px;
+  }
+
+  tbody {
+    display: block;
+    height: 247px;
+    overflow: auto;
+  }
+
+  thead,
+  tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  thead {
+    width: calc( 100% - 1em)
+  }
+
+  table {
+    width: 100%;
+  }
+
+  h1 {
+    padding-top: 20px;
+  }
+
+  .ordersicons1,
+  .ordersicons2 {
+    font-size: 63px !important;
+    padding-top: 14px;
+    padding-left: -22px;
+    margin-left: -35px;
+  }
+
+  .ordersicons {
+    color: green;
+    font-size: 63px !important;
+    padding-top: 14px;
+    padding-left: -22px;
+    margin-left: -30px;
+  }
+
+  .ordersicons1 {
+    color: #23b7e5;
+  }
+
+  .ordersicons2 {
+    color: #673AB7;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .leftpadding {
+    padding-left: 3%;
+  }
+  .visibilty {
+    font-size: 19px !important;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .card-content {
+      overflow-y: hidden;
+      height: auto;
+    }
+  }
+
+  .orderrow {
+
+    /* padding-bottom: 0px; */
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  .sernmeoverflow{
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 2.6em;
+    /* line-height: 0.8em; */
+}
+td,th{
+  text-align: center;
+}
+.background{
+    background-color: bisque !important;
+}
+
+  
+</style>
+{% endblock %}

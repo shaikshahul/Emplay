@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from emplarrapp.views import dashboard,account_data
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', dashboard, name='dashboard'),
+     url(r'^account/(?P<idd>\d+)/$',account_data , name='account'),
 ]

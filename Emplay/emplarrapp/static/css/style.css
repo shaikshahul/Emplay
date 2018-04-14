@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document  */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	height: 100%;
+	width: 100%;
+	background: #ffffff;
+}
+.mainWrapper {
+	height: 100%;
+	width: 100%;
+}
+.Wrapper {
+	height: auto;
+	width: 1024px;
+	margin: 0 auto;
+}
+.logo {
+	height: 73px;
+	width: 180px;
+	/*background: url(../images/BRIO_LOGO-180x73.jpg) no-repeat; */
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+.boxcontainer {
+	border: 2px solid #14a3a9;
+	margin: 0 auto;
+	width: 391px;
+	background: #e1eff5;
+}
+.box {
+	height: 300px;
+}
+.box input {
+	height: 35px;
+	width: 345px;
+	margin: 10px 22px;
+	border-radius: 2px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+
+.paaword-box {
+	height: 350px;
+}
+.paaword-box input {
+	height: 35px;
+	width: 345px;
+	margin: 10px 22px;
+	border-radius: 2px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+
+.button-size input{ width:195px; margin: 3% 24.75%; }
+
+.labelcontainer {
+	width: 150px;
+	float: left;
+	margin-top: 20px;
+	text-align: right;
+}
+
+@media (max-width:435px) {
+.boxcontainer {
+	border: 2px solid #14a3a9;
+	margin: 0 auto;
+	width: 300px;
+	background: #e1eff5;
+}
+.box input, .paaword-box input {
+	height: 35px;
+	width: 276px;
+	margin: 10px 10px;
+	border-radius: 2px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+.logo {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+}
+
+@media (max-width:320px) {
+.boxcontainer {
+	border: 2px solid #14a3a9;
+	margin: 0 auto;
+	width: 235px;
+	height: 335px;
+	background: #e1eff5;
+}
+.box input, .paaword-box input {
+	height: 35px;
+	width: 212px;
+	margin: 10px 10px;
+	border-radius: 2px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+.logo {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+}
