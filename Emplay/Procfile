@@ -1,2 +1,2 @@
-web: gunicorn FyndProject.wsgi --log-file -
+web: gunicorn emplarpro.wsgi --log-file -
 worker: python worker.py
