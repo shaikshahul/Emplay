@@ -73,7 +73,7 @@ WSGI_APPLICATION = 'emplarpro.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-'''
+ 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -85,9 +85,8 @@ DATABASES = {
 
     }
 }
-'''
-import dj_database_url
-DATABASES = { 'default': dj_database_url.config( default=dj_database_url.config('DATABASE_URL') ) }
+# import dj_database_url
+# DATABASES = { 'default': dj_database_url.config( default=dj_database_url.config('DATABASE_URL') ) }
 
 
 
@@ -130,6 +129,7 @@ USE_TZ = True
 #         os.path.join(BASE_DIR, 'static'),
 # )
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static'), ]
 
