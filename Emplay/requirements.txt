@@ -8,7 +8,7 @@ xhtml2pdf
 html5lib==1.0b8
 unidecode
 num2words
-djangorestframework==3.3.3
+djangorestframework==3.9.1
 mysqlclient==1.3.12
 psycopg2
 dj-database-url
