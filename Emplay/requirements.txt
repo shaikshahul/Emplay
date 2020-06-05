@@ -1,4 +1,4 @@
-Django==2.0.2
+Django==2.2.13
 social-auth-core
 social-auth-app-django
 requests==2.3
