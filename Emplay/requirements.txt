@@ -3,7 +3,7 @@ social-auth-core
 social-auth-app-django
 requests==2.3
 toolz
-urllib3==1.22
+urllib3==1.26.5
 xhtml2pdf
 html5lib==1.0b8
 unidecode
